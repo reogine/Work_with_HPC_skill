@@ -32,3 +32,8 @@ A test on the login node **cannot** predict hardware-specific errors (e.g., `Ill
 **How to predict/prevent this BEFORE submitting a batch job:**
 Instead of blindly waiting in an interactive `srun` queue just to test hardware compatibility, **cross-reference the cluster's known architecture.**
 Check the `hpc-foundations` skill (specifically `references/foundations-architecture-and-programming.md`) which catalogs the hardware instructions sets (e.g. AVX-512 limits) for each partition on this cluster. By understanding the underlying architecture, you can proactively choose portable Conda binaries over globally-compiled modules and avoid the core-dump entirely without ever waiting in the queue!
+
+## 5. Accurate Resource Estimation
+- **CRITICAL:** Always estimate your RAM, CPU, GPU, and Wall Time requirements as accurately as possible before submitting a job.
+- Do not blindly request the partition maximums (e.g., requesting 36 hours for a 5-minute script, or 128 CPUs for a single-threaded Python script). Over-requesting resources drastically lowers your job priority (queue time) and clogs the scheduler for other users.
+- If a job fails due to an Out-Of-Memory (OOM) error or a Time Limit timeout, analyze the failure, adjust the `#SBATCH --mem` or `#SBATCH --time` flags accordingly, and document the new baseline for future runs.
