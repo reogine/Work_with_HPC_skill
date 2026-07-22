@@ -113,6 +113,25 @@ Use it to decide which branch to load next.
 - If the user needs accounting or state interpretation, load `sacct`.
 - If the user is comparing scheduler families, start from `Scheduler`, then branch to the specific family.
 
+## UM6P Toubkal Quotas & Limits
+*(Tailored for account `fms_data-1vcth8r1xcm`)*
+
+Based on the Toubkal Slurm cluster policies, the following strict Quality of Service (QOS) limits apply to your jobs:
+
+- **`gpu` Partition (`default-gpu`)**:
+  - **Max GPUs**: 2 NVIDIA A100s per job.
+  - **Max Wall Time**: 24 Hours (`1-00:00:00`).
+  - **Max CPUs**: 64 per job.
+- **`compute` Partition (`default-cpu`)**:
+  - **Max Wall Time**: 36 Hours (`1-12:00:00`).
+  - **Max Nodes**: 64.
+  - **Max CPUs**: 3,584.
+- **`himem` Partition (`himem-cpu`)**:
+  - **Max Wall Time**: 36 Hours (`1-12:00:00`).
+  - **Max CPUs**: 112.
+- **`gpu_h100` Partition**:
+  - **Status**: No Access.
+
 ## Guardrails
 
 - Slurm command pages include user and admin material. Do not assume admin-level commands are safe for ordinary users.
