@@ -23,6 +23,5 @@ Use `assets/templates/` when you need a concrete, best-practice SLURM script:
 
 ## Guardrails
 
-- Do not use the word "video" in SLURM job names under any circumstances.
 - Never run heavy scripts or training loops directly on the login node.
 - Always check `sacctmgr` limits before requesting massive GPU or node allocations.

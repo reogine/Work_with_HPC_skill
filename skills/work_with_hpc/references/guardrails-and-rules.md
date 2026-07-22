@@ -8,7 +8,6 @@ Adhering to these rules prevents system degradation, avoids account suspension, 
 
 ## 2. SLURM Naming Conventions
 - Always assign a descriptive `#SBATCH --job-name`.
-- **CRITICAL**: Do NOT use the word "video" in any SLURM job names under any circumstances. (This is a strict policy requirement for this environment).
 
 ## 3. Output Logging
 - Never let SLURM spam the root of your project directory with `slurm-12345.out` files.
