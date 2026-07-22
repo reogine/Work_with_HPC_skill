@@ -24,7 +24,7 @@ The hpclib scheduler material is strongest on Slurm and lighter on PBS Pro and L
 
 ### Overview page
 
-- `调度器` covers:
+- `Scheduler` covers:
   - scheduler overview
   - mainstream HPC scheduler comparison
   - LSF
@@ -36,14 +36,14 @@ Use it to decide which branch to load next.
 
 ### Slurm coverage
 
-- `Slurm快速入门-用户指南`
+- `Slurm Quick Start - User Guide`
   - overview
   - architecture
   - commands
   - examples
   - best practices for batch jobs
   - MPI
-- `Slurm MPI 用户指南`
+- `Slurm MPI User Guide`
   - PMIx
   - OpenMPI
   - Intel MPI
@@ -52,11 +52,11 @@ Use it to decide which branch to load next.
   - MPICH
   - MVAPICH2
   - HPE Cray PMI support
-- `Job Arrays 支持`
+- `Job Arrays Support`
   - array IDs and environment variables
   - filename patterns
   - queue, cancel, control, and dependency usage
-- `命令，配置和进程`
+- `Commands, Configuration and Processes`
   - commands
   - configuration files
   - daemons and related processes
@@ -72,7 +72,7 @@ Use it to decide which branch to load next.
 - `PBS Pro`
   - what PBS Pro is
   - architecture and components
-- `PBSPro集群用户使用手册`
+- `PBSPro Cluster User Manual`
   - login
   - submit
   - query
@@ -81,7 +81,7 @@ Use it to decide which branch to load next.
 
 ### LSF coverage
 
-- `LSF快速参考`
+- `LSF Quick Reference`
   - install directories
   - user commands
   - `bsub`
@@ -108,10 +108,10 @@ Use it to decide which branch to load next.
 ## Routing Rules
 
 - If the user asks how to submit or monitor a real job, load this reference and then switch to `hpc-orchestration`.
-- If the user asks why `mpirun` and `srun` differ, load `Slurm MPI 用户指南`.
-- If the user is managing large job farms, load `Job Arrays 支持`.
+- If the user asks why `mpirun` and `srun` differ, load `Slurm MPI User Guide`.
+- If the user is managing large job farms, load `Job Arrays Support`.
 - If the user needs accounting or state interpretation, load `sacct`.
-- If the user is comparing scheduler families, start from `调度器`, then branch to the specific family.
+- If the user is comparing scheduler families, start from `Scheduler`, then branch to the specific family.
 
 ## Guardrails
 

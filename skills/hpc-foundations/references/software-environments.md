@@ -15,7 +15,7 @@ Related references:
 
 ### Environment management
 
-- `集群python环境管理就用conda`
+- `Use Conda for Cluster Python Environment Management`
   - what Conda is
   - installation
   - user usage
@@ -25,11 +25,11 @@ This is the best entry point when the user needs isolated Python stacks without 
 
 ### Containers
 
-- `容器那些事儿`
+- `Things About Containers`
   - container overview
   - Docker
   - Singularity
-- `Singularity的基本用法`
+- `Basic Usage of Singularity`
   - build
   - pull
   - run
@@ -42,16 +42,16 @@ This pair covers the conceptual reason to use containers and the concrete Singul
 
 ### Software catalog
 
-- `HPC常用计算应用和软件汇总`
+- `Summary of Common HPC Computing Applications and Software`
   - survey page for common scientific and HPC software families
-- `软件&工具`
+- `Software & Tools`
   - category landing page for the software branch
 
 These pages are useful for mapping the ecosystem, not for deep operational detail.
 
 ### Low-priority productivity tooling
 
-- `好用的Chrome插件`
+- `Useful Chrome Extensions`
   - translation
   - tab management
   - AI assistant browser plugins

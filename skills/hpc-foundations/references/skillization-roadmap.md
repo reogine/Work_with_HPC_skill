@@ -67,7 +67,7 @@ That split would create too many shallow skills, repeat shared context, and make
 - Prefer descriptions like:
   - "Use when the task is about Slurm job submission, job arrays, MPI launch, or Slurm accounting."
 - Avoid descriptions like:
-  - "Use for content from Slurm快速入门-用户指南."
+  - "Use for content from Slurm Quick Start - User Guide."
 
 ## Migration Order
 

@@ -15,43 +15,43 @@ Related references:
 
 ### Storage and filesystems
 
-- `从硬盘到集群存储`
+- `From Hard Disks to Cluster Storage`
   - hardware chapter
   - disks
   - hardware storage solutions
   - software chapter
-- `网络&存储`
+- `Network & Storage`
   - landing page for this branch
 
 This is the right entry when the user needs to reason about local disks, shared storage, or how cluster storage stacks differ from workstation disks.
 
 ### Network and RDMA
 
-- `HPC网络-RDMA`
+- `HPC Network - RDMA`
   - page focused on RDMA-oriented HPC networking
-- `HPC系统架构`
+- `HPC System Architecture`
   - network architecture section complements the RDMA page
 
 Use this pair when the question is really about data movement, latency, or why network architecture changes scaling behavior.
 
 ### Hardware background
 
-- `计算机硬件`
+- `Computer Hardware`
   - landing page for hardware
-- `HPC系统架构`
+- `HPC System Architecture`
   - hardware architecture section
 
 The dedicated hardware page is light, so use it mainly as a routing node rather than a full knowledge source.
 
 ### Cloud and site administration
 
-- `HPC云平台`
+- `HPC Cloud Platform`
   - cloud-oriented HPC overview
-- `HPC安全与管理`
+- `HPC Security and Management`
   - cluster security and management context
-- `WEB服务器自动申请和续订免费SSL证书`
+- `WEB Server Auto Request and Renew Free SSL Certificate`
   - web certificate automation
-- `Hyper-v 虚拟机磁盘扩容`
+- `Hyper-V Virtual Machine Disk Expansion`
   - virtualization maintenance operation
 
 These are mixed-granularity pages. Treat them as seeds for future admin-facing skills rather than a finished admin manual.

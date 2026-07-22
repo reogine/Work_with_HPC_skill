@@ -19,36 +19,36 @@ This topic is the operational substrate below scheduler usage and software envir
 
 ### OS overview
 
-- `操作系统`
+- `Operating System`
   - overview-level page that routes into Linux and Windows material
 
 ### Linux foundations
 
-- `Linux 概况`
+- `Linux Overview`
   - overview
   - usage
   - learning direction
-- `一篇熟悉 Linux 基本操作`
+- `A Guide to Familiarize with Basic Linux Operations`
   - general CLI fluency and daily commands
-- `Linux 用户登录方式总结`
+- `Summary of Linux User Login Methods`
   - local login
   - remote login
   - productivity tools
 
 ### Installation and package management
 
-- `Linux 安装方式总结`
+- `Summary of Linux Installation Methods`
   - hardware
   - OS selection
   - personal suggestions
-- `Linux软件的安装和管理`
+- `Linux Software Installation and Management`
   - `yum` syntax
   - common `yum` commands
   - repository configuration
 
 ### Compatibility and toolchain edge cases
 
-- `在不覆盖系统原有glibc版本情况下编译安装高版本及使用方法`
+- `Compile and Install Higher Version of glibc Without Overwriting Original System Version`
   - preparation
   - checking system glibc
   - build environment
@@ -58,14 +58,14 @@ This page is especially useful when prebuilt binaries or modern Python packages 
 
 ### Linux versus Windows
 
-- `Linux与Windows之间的区别`
+- `Differences Between Linux and Windows`
   - major differences
   - filesystem comparison
   - Linux file types
   - user model comparison
 - `Windows`
   - Windows overview page
-- `原版Windows系统镜像资源集锦`
+- `Collection of Original Windows System Image Resources`
   - Windows image resource index
 
 The Windows pages are peripheral to core HPC cluster usage, but still relevant for workstation setup, dual-environment users, or training material.
@@ -89,7 +89,7 @@ The Windows pages are peripheral to core HPC cluster usage, but still relevant f
 
 - If the user is new to clusters, load Linux overview and Linux basic usage before scheduler details.
 - If the user cannot log in or transfer files, load the login page before any execution workflow.
-- If the blocker is package installation or missing runtime libraries, load `Linux软件的安装和管理` and the glibc page.
+- If the blocker is package installation or missing runtime libraries, load `Linux Software Installation and Management` and the glibc page.
 - If the user is transitioning from Windows to Linux, start from the Linux versus Windows comparison.
 
 ## Guardrails

@@ -7,162 +7,162 @@ This is the page-level catalog for the 2026-03-26 hpclib.com crawl snapshot. Use
 
 ## Root
 
-- `首页`
+- `Home`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
   - Headings: `Stay hungry. Stay foolish.`
 
 ## About
 
-- `关于`
+- `About`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `关于`, `愿景`, `联系方式`, `关于版权`
+  - Headings: `About`, `Vision`, `Contact Information`, `About Copyright`
 
 ## HPC
 
-- `HPC基础知识`
+- `HPC Basic Knowledge`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `HPC基础知识`, `什么是HPC？`, `HPC的历史和发展`, `HPC的应用领域`, `HPC的优势和局限`
-- `HPC系统架构`
+  - Headings: `HPC Basic Knowledge`, `What is HPC?`, `History and Development of HPC`, `Application Areas of HPC`, `Advantages and Limitations of HPC`
+- `HPC System Architecture`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `HPC系统架构`, `硬件架构`, `软件架构`, `网络架构`
-- `HPC作业调度`
+  - Headings: `HPC System Architecture`, `Hardware Architecture`, `Software Architecture`, `Network Architecture`
+- `HPC Job Scheduling`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `HPC作业调度`, `基本概念`, `Slurm介绍`, `Slurm作业提交和管理`, `Slurm作业资源管理`
-- `HPC性能优化`
+  - Headings: `HPC Job Scheduling`, `Basic Concepts`, `Introduction to Slurm`, `Slurm Job Submission and Management`, `Slurm Job Resource Management`
+- `HPC Performance Optimization`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `HPC性能优化`, `程序性能分析工具`, `程序性能优化技巧`, `系统性能优化技巧`
-- `HPC云平台`
+  - Headings: `HPC Performance Optimization`, `Program Performance Analysis Tools`, `Program Performance Optimization Techniques`, `System Performance Optimization Techniques`
+- `HPC Cloud Platform`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `HPC云平台`
-- `HPC安全与管理`
+  - Headings: `HPC Cloud Platform`
+- `HPC Security and Management`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `HPC安全与管理`
-- `HPC编程模型`
+  - Headings: `HPC Security and Management`
+- `HPC Programming Model`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `HPC编程模型`, `MPI编程模型`, `OpenMP编程模型`, `CUDA编程模型`
-- `HPC应用开发`
+  - Headings: `HPC Programming Model`, `MPI Programming Model`, `OpenMP Programming Model`, `CUDA Programming Model`
+- `HPC Application Development`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `HPC应用开发`, `并行算法设计`, `并行应用开发实践`
+  - Headings: `HPC Application Development`, `Parallel Algorithm Design`, `Parallel Application Development Practice`
 
 ## Scheduler
 
-- `调度器`
+- `Scheduler`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `调度器`, `概述`, `主流HPC调度器概览`, `LSF`, `Slurm (纯开源)`, `PBS`, `SGE`, `参考资料`
-- `Slurm快速入门-用户指南`
+  - Headings: `Scheduler`, `Overview`, `Overview of Mainstream HPC Schedulers`, `LSF`, `Slurm (Pure Open Source)`, `PBS`, `SGE`, `References`
+- `Slurm Quick Start - User Guide`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `Slurm快速入门-用户指南`, `概述`, `系统架构`, `命令`, `例子`, `最佳实践，批量作业`, `MPI`
-- `命令，配置和进程`
+  - Headings: `Slurm Quick Start - User Guide`, `Overview`, `System Architecture`, `Commands`, `Examples`, `Best Practices, Batch Jobs`, `MPI`
+- `Commands, Configuration and Processes`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `命令，配置和进程`, `命令`, `配置文件`, `守护进程和其他`
-- `Slurm MPI 用户指南`
+  - Headings: `Commands, Configuration and Processes`, `Commands`, `Configuration Files`, `Daemons and Others`
+- `Slurm MPI User Guide`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `Slurm MPI 用户指南`, `PMIx`, `OpenMPI`, `Intel MPI`, `HYDRA 进程管理器上的 MPIRUN 命令`, `SRUN 命令-SLURM推荐`, `MPICH`, `MVAPICH2`, `HPE Cray PMI 支持`
+  - Headings: `Slurm MPI User Guide`, `PMIx`, `OpenMPI`, `Intel MPI`, `MPIRUN Commands on HYDRA Process Manager`, `SRUN Commands - SLURM Recommended`, `MPICH`, `MVAPICH2`, `HPE Cray PMI Support`
 - `mpi.conf`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `mpi.conf`, `名称`, `描述`, `参数`, `详情`
-- `Job Arrays 支持`
+  - Headings: `mpi.conf`, `Name`, `Description`, `Parameters`, `Details`
+- `Job Arrays Support`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `Job Arrays 支持`, `概述`, `作业 ID 和环境变量`, `文件名`, `取消命令使用`, `队列命令使用`, `控制命令使用`, `作业依赖关系`
+  - Headings: `Job Arrays Support`, `Overview`, `Job IDs and Environment Variables`, `Filenames`, `Cancel Commands Usage`, `Queue Commands Usage`, `Control Commands Usage`, `Job Dependencies`
 - `sacct`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `sacct`, `概要`, `描述`, `选项`, `JOB ACCOUNTING FIELDS`, `JOB STATE CODES`, `PERFORMANCE`, `ENVIRONMENT VARIABLES`
+  - Headings: `sacct`, `Synopsis`, `Description`, `Options`, `JOB ACCOUNTING FIELDS`, `JOB STATE CODES`, `PERFORMANCE`, `ENVIRONMENT VARIABLES`
 - `sacctmgr`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `sacctmgr`, `名字`, `概要`, `描述`, `选项`, `命令`, `交互式命令`, `实体(ENTITIES)`
+  - Headings: `sacctmgr`, `Name`, `Synopsis`, `Description`, `Options`, `Commands`, `Interactive Commands`, `Entities`
 - `PBS Pro`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `PBS Pro`, `什么是 PBS Pro？`, `PBS Pro架构和组件`
-- `PBSPro集群用户使用手册`
+  - Headings: `PBS Pro`, `What is PBS Pro?`, `PBS Pro Architecture and Components`
+- `PBSPro Cluster User Manual`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `PBSPro集群用户使用手册`, `PBSPro集群使用手册`, `1. 概述`, `2. 登录集群`, `3. 提交作业`, `4. 查询作业`, `5. 取消作业`, `6. 作业依赖性`
-- `LSF快速参考`
+  - Headings: `PBSPro Cluster User Manual`, `PBSPro Cluster User Manual`, `1. Overview`, `2. Login to Cluster`, `3. Submit Jobs`, `4. Query Jobs`, `5. Cancel Jobs`, `6. Job Dependencies`
+- `LSF Quick Reference`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `LSF快速参考`, `Unix和Linux安装目录`, `用户命令`, `bsub 命令`, `管理和记帐命令`, `守护程序错误日志文件`, `配置文件`, `lsf.conf 文件中的群集配置参数`
+  - Headings: `LSF Quick Reference`, `Unix and Linux Installation Directories`, `User Commands`, `bsub Commands`, `Management and Accounting Commands`, `Daemon Error Log Files`, `Configuration Files`, `Cluster Configuration Parameters in lsf.conf File`
 
 ## OS
 
-- `操作系统`
+- `Operating System`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `操作系统`, `概述`
-- `Linux与Windows之间的区别`
+  - Headings: `Operating System`, `Overview`
+- `Differences Between Linux and Windows`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `Linux与Windows之间的区别`, `主要区别`, `Linux Vs Windows：文件系统`, `Linux 文件类型`, `常规文件`, `目录文件`, `设备文件`, `Linux Vs Windows：用户`
-- `Linux 概况`
+  - Headings: `Differences Between Linux and Windows`, `Main Differences`, `Linux vs Windows: File System`, `Linux File Types`, `Regular Files`, `Directory Files`, `Device Files`, `Linux vs Windows: Users`
+- `Linux Overview`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `Linux 概况`, `概述`, `使用情况`, `关于Linux的学习`
-- `Linux 安装方式总结`
+  - Headings: `Linux Overview`, `Overview`, `Usage Status`, `About Learning Linux`
+- `Summary of Linux Installation Methods`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `Linux 安装方式总结`, `硬件`, `操作系统`, `个人建议`
-- `Linux 用户登录方式总结`
+  - Headings: `Summary of Linux Installation Methods`, `Hardware`, `Operating System`, `Personal Advice`
+- `Summary of Linux User Login Methods`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `Linux 用户登录方式总结`, `用户登录`, `本地登录`, `远程登录`, `提效工具`
-- `Linux软件的安装和管理`
+  - Headings: `Summary of Linux User Login Methods`, `User Login`, `Local Login`, `Remote Login`, `Efficiency Tools`
+- `Linux Software Installation and Management`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `Linux软件的安装和管理`, `yum 语法`, `yum常用命令`, `yum 源`
-- `一篇熟悉 Linux 基本操作`
+  - Headings: `Linux Software Installation and Management`, `yum Syntax`, `Common yum Commands`, `yum Sources`
+- `A Guide to Familiarize with Basic Linux Operations`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `一篇熟悉 Linux 基本操作`
-- `在不覆盖系统原有glibc版本情况下编译安装高版本及使用方法`
+  - Headings: `A Guide to Familiarize with Basic Linux Operations`
+- `Compile and Install Higher Version of glibc Without Overwriting Original System Version`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `在不覆盖系统原有glibc版本情况下编译安装高版本及使用方法`, `1. 准备工作`, `1.1 检查系统默认的glibc版本`, `1.2 安装编译环境`, `1.3 创建工作目录`, `2. 编译并安装高版本glibc`, `2.1 下载glibc源码`, `2.2 创建构建目录`
+  - Headings: `Compile and Install Higher Version of glibc Without Overwriting Original System Version`, `1. Preparation`, `1.1 Check Default glibc Version`, `1.2 Install Build Environment`, `1.3 Create Working Directory`, `2. Compile and Install Higher Version glibc`, `2.1 Download glibc Source Code`, `2.2 Create Build Directory`
 - `Windows`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `Windows`, `概述`
-- `原版Windows系统镜像资源集锦`
+  - Headings: `Windows`, `Overview`
+- `Collection of Original Windows System Image Resources`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `原版Windows系统镜像资源集锦`
+  - Headings: `Collection of Original Windows System Image Resources`
 
 ## Software And Tools
 
-- `软件&工具`
+- `Software & Tools`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `软件&工具`
-- `HPC常用计算应用和软件汇总`
+  - Headings: `Software & Tools`
+- `Summary of Common HPC Computing Applications and Software`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `HPC常用计算应用和软件汇总`
-- `容器那些事儿`
+  - Headings: `Summary of Common HPC Computing Applications and Software`
+- `Things About Containers`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `容器那些事儿`, `容器简介`, `Docker`, `Singularity`
-- `Singularity的基本用法`
+  - Headings: `Things About Containers`, `Introduction to Containers`, `Docker`, `Singularity`
+- `Basic Usage of Singularity`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `Singularity的基本用法`, `构建容器`, `拉取镜像`, `运行容器`, `执行命令`, `运行交互式shell`, `查看容器信息`, `help`
-- `集群python环境管理就用conda`
+  - Headings: `Basic Usage of Singularity`, `Build Container`, `Pull Image`, `Run Container`, `Execute Commands`, `Run Interactive Shell`, `View Container Information`, `help`
+- `Use Conda for Cluster Python Environment Management`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `集群python环境管理就用conda`, `关于conda`, `安装conda`, `用户使用`, `配置管理`
-- `好用的Chrome插件`
+  - Headings: `Use Conda for Cluster Python Environment Management`, `About Conda`, `Install Conda`, `User Usage`, `Configuration Management`
+- `Useful Chrome Extensions`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `好用的Chrome插件`, `翻译插件`, `沉浸式翻译`, `网页标签管理`, `OneTab`, `AI`, `Monica`
+  - Headings: `Useful Chrome Extensions`, `Translation Extension`, `Immersive Translate`, `Tab Management`, `OneTab`, `AI`, `Monica`
 
 ## Storage And Network
 
-- `网络&存储`
+- `Network & Storage`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `网络&存储`
-- `从硬盘到集群存储`
+  - Headings: `Network & Storage`
+- `From Hard Disks to Cluster Storage`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `从硬盘到集群存储`, `硬件篇`, `硬盘`, `硬件存储方案`, `软件篇`
-- `HPC网络-RDMA`
+  - Headings: `From Hard Disks to Cluster Storage`, `Hardware Chapter`, `Hard Disks`, `Hardware Storage Solutions`, `Software Chapter`
+- `HPC Network - RDMA`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `HPC网络-RDMA`
+  - Headings: `HPC Network - RDMA`
 
 ## Hardware
 
-- `计算机硬件`
+- `Computer Hardware`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `计算机硬件`
+  - Headings: `Computer Hardware`
 
 ## Cloud
 
-- `WEB服务器自动申请和续订免费SSL证书`
+- `WEB Server Auto Request and Renew Free SSL Certificate`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `WEB服务器自动申请和续订免费SSL证书`, `概述`, `SSL证书的申请和配置`
-- `Hyper-v 虚拟机磁盘扩容`
+  - Headings: `WEB Server Auto Request and Renew Free SSL Certificate`, `Overview`, `SSL Certificate Application and Configuration`
+- `Hyper-V Virtual Machine Disk Expansion`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `Hyper-v 虚拟机磁盘扩容`
+  - Headings: `Hyper-V Virtual Machine Disk Expansion`
 
 ## Community And Meta
 
-- `HPC知识星球`
+- `HPC Knowledge Planet`
   - URL: `https://crc4.gitlab.io/um6p/operations/um6p-sysops/
-  - Headings: `HPC知识星球`, `HPC星球`, `星球介绍`, `HPC系列教程`, `目前已完成篇章`
+  - Headings: `HPC Knowledge Planet`, `HPC Planet`, `Planet Introduction`, `HPC Series Tutorials`, `Completed Chapters`
