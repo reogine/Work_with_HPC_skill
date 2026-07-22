@@ -17,3 +17,11 @@ Adhering to these rules prevents system degradation, avoids account suspension, 
   #SBATCH --error=logs/job_%j.err
   ```
 - Ensure the `logs/` directory exists before submitting the job (e.g., `mkdir -p logs`).
+
+## 4. Local Dry-Runs (Pre-Flight Checks)
+- **CRITICAL:** Always simulate or dry-run your scripts locally before submitting them to the SLURM queue. Do not waste time waiting for a job to queue only for it to fail instantly due to a typo or missing import.
+- **How to test safely on a login node:**
+  1. Activate the exact same environment the SLURM script will use.
+  2. Run the script on a very tiny subset of data (or just 1 iteration/epoch) so it finishes in seconds.
+  3. Ensure paths are correct, environment variables are set, and imports succeed.
+  4. Terminate the test immediately if it starts consuming heavy resources.
