@@ -27,11 +27,11 @@ Adhering to these rules prevents system degradation, avoids account suspension, 
   4. Terminate the test immediately if it starts consuming heavy resources.
 
 ### The Limits of Login Node Testing (Hardware Mismatches)
-A test on the login node **cannot** predict hardware-specific errors (e.g., `Illegal instruction (core dumped)`) caused by CPU architecture mismatches. For example, if an environment module (like `foss-2023a`) was natively compiled for the newer processors on the login/compute nodes, running it on the older Intel Xeons of the `gpu` nodes will cause an instant crash due to unsupported instructions (like AVX-512).
+A test on the login node **cannot** predict hardware-specific runtime errors caused by CPU architecture mismatches between partitions. Clusters are often heterogeneous; software or modules compiled natively on the newer processors of a login node may crash when executed on older compute or GPU nodes that lack support for modern instruction sets.
 
 **How to predict/prevent this BEFORE submitting a batch job:**
-Instead of blindly waiting in an interactive `srun` queue just to test hardware compatibility, **cross-reference the cluster's known architecture.**
-Check the `hpc-foundations` skill (specifically `references/foundations-architecture-and-programming.md`) which catalogs the hardware instructions sets (e.g. AVX-512 limits) for each partition on this cluster. By understanding the underlying architecture, you can proactively choose portable Conda binaries over globally-compiled modules and avoid the core-dump entirely without ever waiting in the queue!
+Instead of blindly waiting in an interactive queue just to test hardware compatibility, **cross-reference the cluster's known architecture.**
+Consult the `hpc-foundations` skill (specifically `references/foundations-architecture-and-programming.md`), which catalogs the hardware specs and instruction sets for each partition. By understanding the underlying architecture of your target partition, you can proactively choose portable environments (like Conda) over globally-compiled modules and avoid architecture-related crashes entirely.
 
 ## 5. Accurate Resource Estimation
 - **CRITICAL:** Always estimate your RAM, CPU, GPU, and Wall Time requirements as accurately as possible before submitting a job.
