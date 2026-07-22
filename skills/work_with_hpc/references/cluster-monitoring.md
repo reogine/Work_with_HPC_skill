@@ -7,6 +7,7 @@ Use `sinfo` to view available partitions (queues) and the state of the nodes.
 - **`compute`**: Standard CPU nodes. High core counts (e.g., 56 CPUs/node), good for parallel processing.
 - **`himem`**: High memory nodes. For jobs needing >1TB RAM.
 - **`gpu`**: Nodes equipped with accelerators (e.g., A100s).
+- **`gpu_h100`**: High-tier GPU nodes equipped with H100 accelerators (access may be restricted based on your assigned QOS).
 
 ## 2. Checking Your Account Limits
 Always check your QOS (Quality of Service) and limits using `sacctmgr`.
