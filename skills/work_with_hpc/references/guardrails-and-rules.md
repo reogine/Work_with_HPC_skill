@@ -26,12 +26,10 @@ Adhering to these rules prevents system degradation, avoids account suspension, 
   3. Ensure paths are correct, environment variables are set, and imports succeed.
   4. Terminate the test immediately if it starts consuming heavy resources.
 
-### The Limits of Login Node Testing (Hardware Mismatches)
-A test on the login node **cannot** predict hardware-specific runtime errors caused by CPU architecture mismatches between partitions. Clusters are often heterogeneous; software or modules compiled natively on the newer processors of a login node may crash when executed on older compute or GPU nodes that lack support for modern instruction sets.
+### Hardware Architecture Compatibility
+In addition to a local dry-run, it is highly recommended to cross-reference the cluster's known architecture before submitting a batch job to ensure full hardware compatibility.
 
-**How to predict/prevent this BEFORE submitting a batch job:**
-Instead of blindly waiting in an interactive queue just to test hardware compatibility, **cross-reference the cluster's known architecture.**
-Consult the `hpc-foundations` skill (specifically `references/foundations-architecture-and-programming.md`), which catalogs the hardware specs and instruction sets for each partition. By understanding the underlying architecture of your target partition, you can proactively choose portable environments (like Conda) over globally-compiled modules and avoid architecture-related crashes entirely.
+Consult the `hpc-foundations` skill (specifically `references/foundations-architecture-and-programming.md`), which catalogs the hardware specs and instruction sets for each partition. By understanding the underlying architecture of your target partition, you can proactively choose portable environments over globally-compiled modules, avoiding architecture-related crashes entirely without ever needing to wait in an interactive queue for testing.
 
 ## 5. Accurate Resource Estimation
 - **CRITICAL:** Always estimate your RAM, CPU, GPU, and Wall Time requirements as accurately as possible before submitting a job.
