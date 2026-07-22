@@ -25,3 +25,18 @@ Adhering to these rules prevents system degradation, avoids account suspension, 
   2. Run the script on a very tiny subset of data (or just 1 iteration/epoch) so it finishes in seconds.
   3. Ensure paths are correct, environment variables are set, and imports succeed.
   4. Terminate the test immediately if it starts consuming heavy resources.
+
+### The Limits of Login Node Testing (Hardware Mismatches)
+A test on the login node **cannot** predict hardware-specific errors (e.g., `Illegal instruction (core dumped)`) caused by CPU architecture mismatches. For example, if an environment module (like `foss-2023a`) was natively compiled for the AMD EPYC processors on the login/compute nodes, running it on the older Intel Xeons of the `gpu` nodes will cause an instant crash due to unsupported instructions (like AVX-512).
+
+**How to predict/test this BEFORE submitting a batch job:**
+Instead of testing on the login node, request a fast, interactive session directly on the target hardware using `srun`.
+```bash
+# Request an interactive shell on a GPU node for 30 minutes
+srun --partition=gpu --gres=gpu:1 --time=00:30:00 --pty /bin/bash
+
+# Once inside the node, run your small dry-run test
+source env/bin/activate
+python script.py
+```
+This guarantees your code, environment, and modules are fully compatible with the exact hardware your batch job will use, saving you from waiting in the queue just to fail instantly.
