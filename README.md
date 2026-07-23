@@ -26,15 +26,15 @@ A deep foundational knowledge base customized to the exact specs of the Toubkal 
 
 This repository is designed to be injected into your favorite AI coding agent's context. Here is how to install and use the skills across the most popular agents:
 
-### 1. Cline / RooCode (VS Code Extensions)
-Cline and RooCode natively support modular, on-demand "Skills".
+### 1. Claude Code (CLI)
+Claude Code natively supports custom skills to extend its capabilities.
 1. Clone this repository: `git clone https://github.com/reogine/Work_with_HPC_skill.git`
-2. Copy the contents of the `skills/` directory into your global or project-level `.cline/skills/` directory:
+2. Copy the contents of the `skills/` directory into your global or project-level `.claude/skills/` directory:
    ```bash
-   mkdir -p ~/.cline/skills
-   cp -r Work_with_HPC_skill/skills/* ~/.cline/skills/
+   mkdir -p ~/.claude/skills
+   cp -r Work_with_HPC_skill/skills/* ~/.claude/skills/
    ```
-3. **Usage**: The agent will automatically read the `SKILL.md` frontmatter and trigger the skill when you ask it to perform HPC or SLURM tasks. You can also manually trigger it by typing `/work_with_hpc` in the chat.
+3. **Usage**: Claude Code will detect the `SKILL.md` files. You can trigger the skill manually in the CLI by typing its command (e.g., `/work_with_hpc`) or Claude will automatically invoke it when it recognizes you are working on an HPC task.
 
 ### 2. Cursor (IDE)
 Cursor supports custom Agent Skills out of the box.
@@ -46,13 +46,15 @@ Cursor supports custom Agent Skills out of the box.
    ```
 3. **Usage**: Ask the Cursor Agent (Cmd+L or Composer) to "Deploy this model on the cluster". It will automatically detect and follow the rules laid out in the `SKILL.md` files.
 
-### 3. Aider (CLI)
-Aider uses "conventions" files to maintain project standards.
-1. Clone the repository into your project or a central location.
-2. **Usage**: When starting an Aider session, use the `--read` flag or the `/read` chat command to load the skill as a read-only convention:
+### 3. Hermes AI Agent
+Hermes relies on a persistent memory system and codified Markdown skills.
+1. Clone the repository into a temporary location.
+2. Copy the skills into your Hermes global skills directory:
    ```bash
-   aider --read /path/to/Work_with_HPC_skill/skills/work_with_hpc/SKILL.md
+   mkdir -p ~/.hermes/skills
+   cp -r Work_with_HPC_skill/skills/* ~/.hermes/skills/
    ```
+3. **Usage**: Hermes will automatically identify and integrate these playbooks into its behavior. Whenever you ask Hermes to interact with the HPC or write a SLURM script, it will reference these skills to avoid common pitfalls.
 
 ### 4. General Agents (OpenDevin, AutoGPT, ChatGPT, Claude)
 If your agent does not support a dedicated "skills" folder:
