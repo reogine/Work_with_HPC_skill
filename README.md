@@ -1,4 +1,4 @@
-# My-HPC-Skills (Pending Rename)
+# Toubkal-Agentic-HPC
 
 A collection of custom AI agent skills tailored specifically for interacting with the **UM6P Toubkal Supercomputer**. These skills guide AI coding agents on how to safely navigate the cluster, write Slurm batch scripts, and avoid common hardware and quota pitfalls.
 
