@@ -28,5 +28,6 @@ Use `assets/templates/` when you need a concrete, best-practice SLURM script:
 ## Guardrails
 
 - Never run heavy scripts or training loops directly on the login node.
-- **CRITICAL**: Always perform a fast, small-scale local dry-run (e.g., 1 iteration on dummy data) before submitting a job to the SLURM queue to catch syntax or environment errors early.
+- **CRITICAL**: Always perform a deep local dry-run before submitting a job to the SLURM queue. A simple syntax check is insufficient; you MUST execute the data loader and at least one full iteration/forward pass on a dummy subset to catch `AttributeError`s or missing Python attributes early.
+- **TIME LIMITS**: Always add a 20% wall-time buffer to your SLURM script estimates. For deep learning or long jobs, strictly enforce periodic model checkpointing so progress isn't lost if the job is `CANCELLED DUE TO TIME LIMIT`.
 - Always check `sacctmgr` limits before requesting massive GPU or node allocations.
