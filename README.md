@@ -21,7 +21,6 @@ A deep foundational knowledge base customized to the exact specs of the Toubkal 
   - `gpu`: Max 2 A100 GPUs, 24-hour limit.
   - `compute`: Max 64 nodes, 36-hour limit.
   - `himem`: Max 112 CPUs, 36-hour limit.
-- **Storage, Network & Cloud (`storage-network-cloud-and-admin.md`)**: Explicit networking guardrails, documenting that outbound QUIC (UDP) traffic fails on the cluster network and tunneling solutions (like `cloudflared`) must be configured to fallback to TCP (`http2`).
 
 ## Installation
 

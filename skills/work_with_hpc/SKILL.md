@@ -12,7 +12,6 @@ Use this skill as a comprehensive guide for interacting with HPC environments, s
 **CRITICAL CROSS-REFERENCE:** Before executing workflows, pull concrete hardware, limit, and networking data from the `hpc-foundations` skill:
 - For architecture (AVX-512 vs AVX2 mismatches), read `../hpc-foundations/references/foundations-architecture-and-programming.md`.
 - For strict QOS limits (Max GPUs, CPUs, Wall Time), read `../hpc-foundations/references/schedulers-and-execution.md`.
-- For networking limits (QUIC/UDP restrictions), read `../hpc-foundations/references/storage-network-cloud-and-admin.md`.
 
 1. Read `references/cluster-monitoring.md` to understand how to check your available resources and strict SLURM quotas.
 2. Read `references/storage-and-environments.md` to learn why you must use Lustre/Scratch storage for intensive tasks and how to properly activate software modules.

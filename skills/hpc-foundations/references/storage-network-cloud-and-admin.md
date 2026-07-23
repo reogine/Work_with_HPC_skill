@@ -81,4 +81,3 @@ These are mixed-granularity pages. Treat them as seeds for future admin-facing s
 - RDMA, storage stacks, and cluster security are highly implementation-specific. Use this reference for orientation only.
 - SSL and Hyper-V pages are admin micro-guides, not generic HPC user material.
 - Before applying any admin procedure, verify the exact platform, distribution, service manager, and backup or rollback path.
-- **Networking/Tunneling on Toubkal**: Outbound UDP (QUIC) traffic is blocked or fails on the cluster network. If you are running cloud tunneling solutions (like `cloudflared`) to expose services (like vLLM) from a compute node, you must configure the tunnel to fallback to TCP (`http2`) by either letting the QUIC precheck fail gracefully or forcing the protocol flag (`--protocol http2`).
