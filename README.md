@@ -22,6 +22,39 @@ A deep foundational knowledge base customized to the exact specs of the Toubkal 
   - `compute`: Max 64 nodes, 36-hour limit.
   - `himem`: Max 112 CPUs, 36-hour limit.
 
-## Installation
+## Installation & Usage
 
-These skills are designed to be dynamically loaded into the agent's context. Clone this repository and either link it or copy the `skills/` directory into your global agent configuration root (e.g., `~/.gemini/config/skills/`).
+This repository is designed to be injected into your favorite AI coding agent's context. Here is how to install and use the skills across the most popular agents:
+
+### 1. Cline / RooCode (VS Code Extensions)
+Cline and RooCode natively support modular, on-demand "Skills".
+1. Clone this repository: `git clone https://github.com/reogine/Work_with_HPC_skill.git`
+2. Copy the contents of the `skills/` directory into your global or project-level `.cline/skills/` directory:
+   ```bash
+   mkdir -p ~/.cline/skills
+   cp -r Work_with_HPC_skill/skills/* ~/.cline/skills/
+   ```
+3. **Usage**: The agent will automatically read the `SKILL.md` frontmatter and trigger the skill when you ask it to perform HPC or SLURM tasks. You can also manually trigger it by typing `/work_with_hpc` in the chat.
+
+### 2. Cursor (IDE)
+Cursor supports custom Agent Skills out of the box.
+1. In your project's root folder, create a `.cursor/skills/` directory.
+2. Copy the specific skill folders into it:
+   ```bash
+   mkdir -p .cursor/skills
+   cp -r Work_with_HPC_skill/skills/* .cursor/skills/
+   ```
+3. **Usage**: Ask the Cursor Agent (Cmd+L or Composer) to "Deploy this model on the cluster". It will automatically detect and follow the rules laid out in the `SKILL.md` files.
+
+### 3. Aider (CLI)
+Aider uses "conventions" files to maintain project standards.
+1. Clone the repository into your project or a central location.
+2. **Usage**: When starting an Aider session, use the `--read` flag or the `/read` chat command to load the skill as a read-only convention:
+   ```bash
+   aider --read /path/to/Work_with_HPC_skill/skills/work_with_hpc/SKILL.md
+   ```
+
+### 4. General Agents (OpenDevin, AutoGPT, ChatGPT, Claude)
+If your agent does not support a dedicated "skills" folder:
+1. Provide the main `SKILL.md` file as an attachment or system prompt context.
+2. **Example Prompt**: *"Please write a SLURM script to train my model. Before you write any code, read the attached `SKILL.md` file and follow its cluster guardrails strictly."*
