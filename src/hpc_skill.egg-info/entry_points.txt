@@ -1,0 +1,2 @@
+[console_scripts]
+hpc-skill = hpc_skill.cli:main
