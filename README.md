@@ -42,7 +42,7 @@ pip install hpc-skill
 
 ### Step 2 — register the skill with your AI assistant:
 
-For **Google Antigravity**, simply run:
+1. **Google Antigravity:**
 
 ```bash
 hpc-skill install
