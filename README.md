@@ -42,11 +42,13 @@ pip install hpc-skill
 
 ### Step 2 — register the skill with your AI assistant:
 
+For **Google Antigravity**, simply run:
+
 ```bash
 hpc-skill install
 ```
 
-That's it. Open your AI assistant, and it will now be fully aware of the cluster hardware, orchestration rules, and HPC stack nuances.
+That's it. Open Google Antigravity, and it will now be fully aware of the cluster hardware, orchestration rules, and HPC stack nuances.
 
 To install the assistant skill into the current repository instead of your user profile, add `--project`:
 
